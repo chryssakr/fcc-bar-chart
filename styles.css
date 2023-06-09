@@ -1,0 +1,68 @@
+body {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+  
+h1 {
+  color: #8B0000;
+}
+
+.info {
+  font-size: 0.7em;
+}
+
+.bar:hover {
+  fill: pink;
+}
+
+#container {
+  height: 560px;
+  width: 900px;
+  background-color: #FFFAF1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#x-axis path,
+#y-axis path {
+  fill: none;
+  stroke: #333;
+}
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font: 12px;
+  background: #d45959;
+  color: #142b24;
+  opacity: 0.2;
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  background: #fff;
+  pointer-events: none;
+}
